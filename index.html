@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Git</title>
+</head>
+<body>
+   <u><h1>Everyday Git</h1></u>
+   <img src="/assets/gitlogo.png" alt="git logo">
+    <h2>What is Git?</h2>
+    <p>Git is a <a href="https://git-scm.com/about/free-and-open-source" target="_blank">free and open source</a> distributed version control system (VCS), authored by <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvalds</a> and officially released on<a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git" target="_blank"> 7<sup>th</sup> April 2005</a>. Git helps to track changes in any set of computer files and is often used for coordinating work among programmers who are collaboratively developing source code during software development.</p>
+    <p>Git is used to store code, track revision history, merge code changes as well as revert to earlier code versions whenever needed. Though git is designed to handle everything from small to very large projects with speed and efficiency, it is easy to learn</p>
+    <h2>Version Control (VC)</h2>
+    <p>Version control is also known as source control and it is the practice of tracking and managing changes to software code. </p>
+    <h2>Version Control Sytstems (VCS)</h2>
+    <p>Version control systems are software tools that help software teams manage changes to source code over time thus enabling them work faster and smarter.</p>
+    <p>They keep track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.</p>
+    Examples of Version Control Systems Include;
+    <ul>
+        <li>Git: <a href="https://git-scm.com/" target="_blank">Git Website (Official)</a></li><br/>
+        <li>Subversion (SVN): <a href="https://subversion.apache.org/" target="_blank">Apache Subversion</a></li><br/>
+        <li>Mercurial: <a href="https://www.mercurial-scm.org/" target="_blank">Mercurial Website</a></li><br/>
+        <li>Perforce (Helix Core): <a href="https://www.perforce.com/" target="_blank">Perforce Website</a></li><br/>
+        <li>Team Foundation Version Control (TFVC): <a href="https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/?view=azure-devops" target="_blank">DevOps Documentation</a></li><br/>
+        <li>etc.</li><br/>
+    </ul>
+    <p>Despite the fact that there are many version control systems listed above, in this  website we will be covering <strong><i>Git</i></strong> &amp; <strong><i>GitHub.</i></strong></p>
+
+    <br>
+    <img src="/assets/github.jpg" alt="image of github logo">
+    <h2>GITHUB</h2>
+    <p>Github is a developer platform that allows developers to create, store, manage and share their code. It uses <strong>Git</strong> software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and <a href="https://en.wikipedia.org/wiki/Wiki" target="_blank">wikis</a> for every project.</p>
+    <p>It is commonly used to host open source software development projects. Other sites that can be preferences to Github include;</p>
+    <ul>
+        <li>GitLab: <a href="https://about.gitlab.com/" target="_blank">GitLab Website</a></li><br/>
+        <li>Bitbucket: <a href="https://bitbucket.org/" target="_blank">Bitbucket Website</a></li><br/>
+        <li>SourceForge: <a href="https://sourceforge.net/" target="_blank">SourceForge Website</a></li><br/>
+        <li>Azure DevOps: <a href="https://azure.microsoft.com/en-us/products/devops/" target="_blank">Azure DevOps Website</a></li><br/>
+        <li>AWS CodeCommit: <a href="https://aws.amazon.com/codecommit/" target="_blank">AWS CodeCommit Website</a></li><br/>
+        <li>etc.</li>
+    </ul>
+    <p>We will now go through various steps to install, setup and configure git as well as basic application procedures.</p><br>
+
+    <h3><strong><i> <p>Are you wondering how you will start working with such a Version Control System? Worry no more, I will take you through each process step by step.</p>
+    </i></strong></h3>
+    <h2><i><strong>Let's Get Started</strong></i></h2>
+    <ol>
+        <li>
+            <h3>Git Installation</h3>
+            <p>To check whether git is already installed in your desktop, you need to run this command in your <i>terminal</i> or <i>command prompt;</i> <u><i><strong>git --version</strong></i></u></p>
+            <ul><li><p>If git already exists in your operating system, the git version will be displayed as follows;</p></li></ul>
+            <strong><p>NOTE: The Version Number May be different</p></strong>
+            <figure>
+                <img src="./assets/gitversion.png" alt="picture of a git version number displayed as output">
+                <figcaption>A picture of a git version number displayed as output to indicate git exists on the operating system.</figcaption>
+            </figure><br>
+            <ul><li><p>If git does not exists in your operating system, the following output will be displayed;</p></li></ul>
+            <figure>
+                <img src="./assets/example-1.png" alt="picture of command prompt output">
+                <figcaption>A picture to indicate that git is not installed on the operating system.</figcaption>
+            </figure>
+            <p>If git isn't installed on your operating system, follow this link <a href="https://git-scm.com/downloads" target="_blank">download git <sub><img src="./assets/git-logo-24.png" alt="git icon"></sub></a> to download git from the official website based on the operating system you are using.</p>
+            <p>Once you download and run the git set-up, check whether git is installed in your operating system once more through running this command  <u><i><strong>git --version</strong></i></u> in your terminal or command prompt expecting a git version output to be displayed.</p>
+        </li>
+        <li>
+            <h3>Configuring Git</h3>
+            <p>We then need to configure git to make it aware of the current user and user email inorder to easen authentication with developer platforms such as GitHub as well as tracking.</p>
+            <ul><li><p>To configure the users name we run <u><i><strong>git config --global user.name "your name"</strong></i></u> in the terminal or command prompt</p></li></ul>
+            <figure>
+                <img src="./assets/username.png" alt="picture of command prompt git username configuration">
+                <figcaption>A terminal image depicting git username configuration for Stephen Omondi (Anonymous name)</figcaption>
+            </figure>
+           <ul><li> <p>To configure the users email we run <u><i><strong>git config --global user.email "your email address"</strong></i></u> in the terminal or command prompt</p></li></ul>
+            <figure>
+                <img src="./assets/useremail.png" alt="picture of command prompt git username configuration">
+                <figcaption>A terminal image depicting git useremail configuration for Stephen Omondi (Anonymous name)</figcaption>
+            </figure>
+        </li>
+        <p>Now that we have finished the installation and configuration process, let's dive into initializing a git repository.</p>
+        <li>
+            <h3>Initializing a Git repository</h3>
+            <p>A <strong>Git Repository</strong> is the .git/ folder inside a project. This repository tracks all changes made to files in your project, building a history over time. Meaning, if you delete the .git/ folder, then you delete your project's history.</p>
+            <p>To initialize a git repository, we follow through the following steps;</p>
+            <ul>
+                <li>
+                    <p>Open the terminal or command prompt and navigate to the expected folder by running <u><i><strong>cd "folder name"</strong></i></u> in the terminal. Here I will be navigating to a folder named "gittutorialblog" that's based in the desktop.</p>
+                <figure>
+                    <img src="./assets/navigate.png" alt="picture of command prompt">
+                    <figcaption>Image demonstrating how to navigate to a specific folder.</figcaption>
+                </figure>
+                </li>
+                <li>
+                    <p>Before initializing the git repository we need to check whether it had been earlier initialized by running <u><i><strong>git status.</strong></i></u></p>
+                    <p>If the folder was not earlier initialized, the following will be outputed.</p>
+                    <figure>
+                        <img src="./assets/gitstatus.png" alt="picture of git status output in terminal">
+                        <figcaption>Image depicting folder is not yet initialized.</figcaption>
+                    </figure> 
+                    <p>We therefore initialize the repository by running <u><i><strong>git init</strong></i></u> in the terminal</p>
+                    <figure>
+                        <img src="./assets/gitinit.png" alt="picture of git init command output in terminal">
+                        <figcaption>Image depicting folder has been initialized.</figcaption>
+                    </figure> 
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Adding files to the staging area</h3>
+            <p>A <strong>staging area</strong> is a file, generally contained in your Git directory, that stores information about what will go into your next commit. Its technical name in Git parlance is the “index”, but the phrase “staging area” works just as well. This helps to track the files.</p>
+            <p>To add files to staging area we first run <u><i><strong>git status</strong></i></u> to check whether the repository was initialized and then run <u><i><strong>git add .</strong></i></u> to add all files to staging area. <br> If you just wish to add a specific file and not all the files to the staging area run <u><i><strong>git add "file name".</strong></i></u></p>
+            <p>Tracked files are files that Git knows about. Untracked files are all files in your working directory that were not in your last snapshot and are not in your staging area.</p>
+            <p>They are the ones handled (version controlled) by Git, that were once added and committed. Untracked files are most of the time files you don't want to be controlled, because for example they are generated by your compiler. Untracked files are added to the .gitignore file, so that Git doesn't track them.</p>
+            <figure>
+                <img src="./assets/gitadd.png" alt="picture of git add command in terminal">
+                <figcaption>Image depicting addition of files to staging area.</figcaption>
+            </figure> 
+        </li>
+        <li>
+            <h3>Commiting changes</h3>
+            <p>To create a snapshot of the staged changes along a timeline of a Git projects history, we use the <u><i><strong>git commit -m "your message"</strong></i></u> command. Best practice while naming a git commit message is to answer the question <i>This commit will?</i></p>
+            <p>For example, for my first commit, I'll seek to answer the question <i>This commit will?</i> "add initial commit."</p>
+            <figure>
+                <img src="./assets/gitcommit.png" alt="picture of git commit command in terminal">
+                <figcaption>Committing changes.</figcaption>
+            </figure> 
+            <ul>
+                <li><p>To review past commits we use the <u><i><strong>git log </strong></i></u> command.</p></li>
+            </ul>
+            <figure>
+                <img src="./assets/gitlog.png" alt="picture of git log command in terminal">
+                <figcaption>How to look at past commits.</figcaption>
+            </figure> 
+            <ul><li><p>If you wish to view past commits in summary we use <u><i><strong>git log  --oneline</strong></i></u> command.</p></li></ul>
+            <figure>
+                <img src="./assets/gitlogoneline.png" alt="picture of git log --oneline command in terminal">
+                <figcaption>How to look at a summarized description of past commits.</figcaption>
+            </figure> 
+        <i><p> <strong>NOTE:</strong> If you compare the output from the <u><i><strong>git log</strong></i></u> and <u><i><strong>git log  --oneline</strong></i></u>, you'll realize that the one for <u><i><strong>git log  --oneline</strong></i></u> is summarized.</p></i>
+        <ul>
+            <li>
+                <p>If you wish to go to a particular commit, use the <u><i><strong>git checkout "commit id".</strong></i></u> Example;</p>
+                <figure>
+                    <img src="./assets/gitcheckoutid.png" alt="picture of git checkout command in terminal">
+                    <figcaption>How to go to a specific commit message. To undo use <u><i><strong>git switch -</strong></i></u> command</figcaption>
+                </figure> 
+                <figure>
+                    <img src="./assets/gitswitch.png" alt="picture of git switch command in terminal">
+                    <figcaption>How to undo a git checkout on a commmit message.</figcaption>
+                </figure> 
+                <ul><li>To change the last commit to a message of your choice use <u><i><strong>git commit -v --amend.</strong></i></u> It will open a file in the code editor for you to make the necessary changes.</li></ul>
+                    <figure>
+                        <img src="./assets/gitcommitchange.png" alt="picture showing how to edit last commit message">
+                        <figcaption>How to edit last commmit message.</figcaption>
+                    </figure> 
+                    <figure>
+                        <img src="./assets/gitcommitediting.png" alt="picture of git file opened in editor opened" width="900px">
+                        <figcaption>I will change the commit message from <u><i>add initial commit</i></u> to <u><i>add first commit.</i></u> Below are the results when I run <i>git log --oneline</i> again.</figcaption>
+                    </figure> 
+                    <figure>
+                        <img src="./assets/gitnewcommit.png" alt="picture of newly edited commit message">
+                        <figcaption>Picture of newly edited commit message.</figcaption>
+                    </figure> 
+                </li>
+                <li>
+                    Now to push your repository to Github, we first create a repository in github as follows. Click Here to <a href="https://github.com/" target="_blank">Create a GitHub account</a> if you don't have.
+                                <figure>
+                    <img src="./assets/gitrepo.png" alt="picture of newly edited commit message" width="700px">
+                    <figcaption>How to create a github repository.</figcaption>
+                </figure>          
+                </li>
+                <li>On creating the repository, copy the url. paste it in the terminal with the following command <u><i>git remote add origin "paste link here"</i></u>. E.g. 
+                
+                </li>
+        </ul> 
+    </li>
+    <li>
+     <h3>Branches in git and how to create them</h3>   
+     <p><strong>Git branches</strong> are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small, you spawn a new branch to encapsulate your changes.
+        This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch.
+     </p><br>
+    <ul><li><p>To create branches in git we use the following command <u><i><strong>git branch "branch name".</strong></i></u></p></li></ul>
+     <figure>
+        <img src="./assets/gitbranch.png" alt="picture of how to create a branch in git">
+        <figcaption>A created branch in git</figcaption>
+    </figure> 
+    <ul><li><p>To check for the branches we run <u><i><strong>git branch </strong></i></u>command. E.g.</p></li></ul>
+    <figure>
+        <img src="./assets/gitbranchcheck.png" alt="picture of how to check for branches created in git">
+        <figcaption>A check of all created bramnches. Above we see we only have the <i>main branch</i> and the newly created <i>stephen/blogs</i> branch.</figcaption>
+    </figure> 
+    <p><strong>NOTE:</strong> To identify the current branch you are currently in, besides the branch there's often an asterisk *. To navigate to a different branch we use <u><i><strong>git checkout "branch name".</strong></i></u> E.g.</p>
+    <figure>
+        <img src="./assets/gitcheckout.png" alt="picture of how to checkout to a branch">
+        <figcaption>A checkout to stephen/gitblogs branch</figcaption>
+    </figure> 
+    <p>Once you are finished and would like to merge the git branch to the main/ master branch, use <u><i><strong>git merge "branch name" </strong></i></u>command. E.g.</p>
+    <figure>
+        <img src="./assets/gitmerge.png" alt="picture of how to merge a branch">
+        <figcaption>Merging of stephen/gitblogs branch</figcaption>
+    </figure>
+    <p>After merging, one can opt to delete the branch and to do so use <u><i><strong>git branch -D "branch name" </strong></i></u>command. E.g.</p>
+   `<p>First make sure you are not in the branch you wish do delete.</p>
+    <figure>
+        <img src="./assets/gitbranchdelete.png" alt="picture of how to delete a branch">
+        <figcaption>Deletion of stephen/gitblogs branch</figcaption>
+    </figure>
+    </li>
+    </ol>
+    <h3>Congratulations for reading this blog to the end. Now you are more endowed with basic git commands to help you in both your existing and future projects.</h3>
+    <h2>Are you wondering whether that's all to do with Git &amp; GitHub?</h2>
+    <p>I have only covered the basic git commands, I urge you to read more on git advanced concepts as well as Github. Below is a summarized git Sheet.</p>
+    <figure>
+        <img src="./assets/git sheet.png" alt="picture of git commands">
+        <figcaption>Git Sheet containing basic git commands.</figcaption>
+    </figure> 
+    <h2>Thank you for Reading this Blog on Git. Remember to subscribe to Our newsletter for more updates.</h2>
+    <form>
+        <div>
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your email to Subscribe">
+        </div>
+        <button type="submit">Subscribe</button>
+    </form>
+    <i><p>Blog compiled by <strong>Jasper Ngunjiri</strong></p></i>
+</body>
+</html>
